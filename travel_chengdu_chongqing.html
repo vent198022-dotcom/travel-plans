@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成都重慶 9天8夜 旅遊行程 2026</title>
+<style>
+  :root {
+    --red: #C0392B;
+    --red-dark: #96281B;
+    --red-light: #E8453C;
+    --brown: #5D4037;
+    --brown-light: #795548;
+    --cream: #FDF6EC;
+    --cream-dark: #F5E6D0;
+    --white: #FFFFFF;
+    --text: #2C1810;
+    --text-light: #5D4037;
+    --border: #D7C4A8;
+    --shadow: rgba(93,64,55,0.15);
+    --warning: #E67E22;
+    --success: #27AE60;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .site-header {
+    background: linear-gradient(135deg, var(--red-dark) 0%, var(--red) 50%, var(--brown) 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .site-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .site-header h1 { font-size: clamp(1.6rem,5vw,2.8rem); font-weight:700; letter-spacing:2px; text-shadow:0 2px 8px rgba(0,0,0,0.3); position:relative; }
+  .site-header .subtitle { margin-top:10px; font-size:clamp(0.85rem,2.5vw,1.05rem); opacity:0.9; position:relative; letter-spacing:1px; }
+  .header-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:16px; position:relative; }
+  .badge { background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.35); border-radius:20px; padding:4px 14px; font-size:0.82rem; }
+
+  /* TAB NAV */
+  .tab-nav-wrapper { background:var(--brown); position:sticky; top:0; z-index:100; box-shadow:0 2px 8px var(--shadow); }
+  .tab-nav { display:flex; overflow-x:auto; gap:2px; padding:0 8px; scrollbar-width:none; -webkit-overflow-scrolling:touch; }
+  .tab-nav::-webkit-scrollbar { display:none; }
+  .tab-btn { flex-shrink:0; background:none; border:none; cursor:pointer; color:rgba(255,255,255,0.7); padding:13px 14px; font-size:0.82rem; font-family:inherit; font-weight:500; white-space:nowrap; transition:all 0.2s; border-bottom:3px solid transparent; }
+  .tab-btn:hover { color:white; background:rgba(255,255,255,0.08); }
+  .tab-btn.active { color:white; border-bottom-color:var(--red-light); background:rgba(255,255,255,0.12); }
+
+  /* CONTENT */
+  .tab-content { display:none; }
+  .tab-content.active { display:block; }
+  .page-container { max-width:900px; margin:0 auto; padding:24px 16px 40px; }
+
+  /* PAGE TITLE */
+  .page-title { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+  .page-title .icon { font-size:2rem; }
+  .page-title h2 { font-size:clamp(1.2rem,4vw,1.7rem); color:var(--red-dark); font-weight:700; }
+  .page-title .meta { font-size:0.82rem; color:var(--text-light); margin-top:2px; }
+
+  /* CARD */
+  .card { background:white; border-radius:12px; box-shadow:0 2px 12px var(--shadow); margin-bottom:20px; overflow:hidden; }
+  .card-header { background:linear-gradient(135deg,var(--red) 0%,var(--red-dark) 100%); color:white; padding:14px 20px; display:flex; align-items:center; gap:10px; }
+  .card-header h3 { font-size:1rem; font-weight:600; }
+  .card-body { padding:18px 20px; }
+
+  /* ACTIVITY LIST */
+  .activity-list { list-style:none; padding:0; }
+  .activity-list li { padding:8px 0 8px 20px; border-bottom:1px dashed var(--border); position:relative; font-size:0.93rem; }
+  .activity-list li:last-child { border-bottom:none; }
+  .activity-list li::before { content:'●'; position:absolute; left:0; top:9px; color:var(--red); font-size:0.6rem; }
+  .activity-list li strong { color:var(--red-dark); }
+  .activity-list li .addr { display:block; font-size:0.78rem; color:var(--text-light); margin-top:2px; }
+
+  .ticket-badge { display:inline-block; background:#FFF3CD; border:1px solid #F0C040; color:#856404; border-radius:4px; padding:1px 7px; font-size:0.75rem; font-weight:600; margin-left:6px; }
+  .free-badge { display:inline-block; background:#D4EDDA; border:1px solid #C3E6CB; color:#155724; border-radius:4px; padding:1px 7px; font-size:0.75rem; font-weight:600; margin-left:6px; }
+
+  /* BUDGET MINI */
+  .budget-mini { background:var(--cream); border-radius:8px; padding:12px 16px; margin-top:14px; }
+  .budget-mini h4 { font-size:0.85rem; color:var(--brown); margin-bottom:8px; font-weight:600; }
+  .budget-mini .budget-row { display:flex; justify-content:space-between; font-size:0.82rem; padding:3px 0; border-bottom:1px dashed var(--border); }
+  .budget-mini .budget-row:last-child { border:none; font-weight:700; color:var(--red-dark); font-size:0.9rem; }
+
+  /* MAPS */
+  .map-section { margin-top:18px; border-top:2px solid var(--cream-dark); padding-top:14px; }
+  .map-section h4 { display:flex; align-items:center; gap:8px; font-size:0.95rem; color:var(--brown); margin-bottom:12px; font-weight:600; }
+  .map-open-btn { display:flex; align-items:center; justify-content:center; gap:10px; background:var(--red); color:white; text-decoration:none; border-radius:10px; padding:14px 24px; font-size:1rem; font-weight:700; transition:background 0.2s; box-shadow:0 3px 10px rgba(192,57,43,0.4); width:100%; margin-top:4px; }
+  .map-open-btn:hover { background:var(--red-dark); }
+  .spot-link { display:inline-flex; align-items:center; gap:3px; color:var(--red); text-decoration:none; font-size:0.78rem; margin-left:6px; white-space:nowrap; }
+  .spot-link:hover { text-decoration:underline; }
+
+  /* ALERTS */
+  .alert-box { border-radius:8px; padding:12px 16px; margin-bottom:16px; font-size:0.88rem; display:flex; gap:10px; align-items:flex-start; }
+  .alert-box.warning { background:#FFF3CD; border-left:4px solid var(--warning); color:#6B4C00; }
+  .alert-box.danger  { background:#FDECEA; border-left:4px solid var(--red); color:#6B1A14; }
+  .alert-box.info    { background:#E8F4FD; border-left:4px solid #2980B9; color:#1A4A6B; }
+  .alert-box .alert-icon { font-size:1.1rem; flex-shrink:0; margin-top:1px; }
+
+  /* TABLE */
+  .data-table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+  .data-table th { background:var(--red); color:white; padding:10px 12px; text-align:left; font-weight:600; }
+  .data-table td { padding:9px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  .data-table tr:nth-child(even) td { background:var(--cream); }
+  .data-table tr:last-child td { border-bottom:none; }
+  .data-table .total-row td { font-weight:700; background:var(--cream-dark) !important; color:var(--red-dark); }
+  .overflow-table { overflow-x:auto; border-radius:10px; box-shadow:0 2px 8px var(--shadow); }
+
+  /* CHECKLIST */
+  .checklist { list-style:none; padding:0; }
+  .checklist li { display:flex; align-items:flex-start; gap:10px; padding:9px 0; border-bottom:1px dashed var(--border); font-size:0.9rem; }
+  .checklist li:last-child { border-bottom:none; }
+  .checklist li .check-icon { font-size:1.1rem; flex-shrink:0; margin-top:1px; }
+
+  /* INFO GRID */
+  .info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+
+  /* BUDGET OVERVIEW */
+  .budget-category { margin-bottom:24px; }
+  .budget-category h3 { font-size:1rem; font-weight:700; color:white; background:var(--brown); padding:8px 16px; border-radius:6px; margin-bottom:0; }
+  .budget-total-box { background:linear-gradient(135deg,var(--red-dark),var(--red)); color:white; border-radius:12px; padding:20px 24px; text-align:center; margin-top:20px; }
+  .budget-total-box .total-label { font-size:0.9rem; opacity:0.85; }
+  .budget-total-box .total-cny { font-size:2rem; font-weight:800; margin:4px 0; }
+  .budget-total-box .total-twd { font-size:1.1rem; opacity:0.9; }
+
+  /* PHRASE TABLE */
+  .phrase-table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+  .phrase-table th { background:var(--brown); color:white; padding:8px 12px; text-align:left; }
+  .phrase-table td { padding:8px 12px; border-bottom:1px solid var(--border); }
+  .phrase-table tr:last-child td { border-bottom:none; }
+  .phrase-table tr:nth-child(even) td { background:var(--cream); }
+
+  /* TRANSPORT */
+  .transport {
+    background: #FFF8E1;
+    border-left: 4px solid #FF8F00;
+    padding: 8px 14px;
+    margin: 8px 0 16px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9em;
+    color: #5D4037;
+  }
+
+  /* FOOTER */
+  .site-footer { background:var(--brown); color:rgba(255,255,255,0.7); text-align:center; padding:20px; font-size:0.8rem; margin-top:20px; }
+
+  @media (max-width:600px) {
+    .tab-btn { padding:11px 10px; font-size:0.78rem; }
+    .card-body { padding:14px 14px; }
+    .map-iframe-wrapper iframe { height:280px; }
+  }
+
+/* ── 快速總覽 ── */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.highlight-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px var(--shadow);
+  padding: 20px 14px;
+  text-align: center;
+  border-top: 4px solid var(--red);
+  transition: transform 0.2s;
+}
+.highlight-card:hover { transform: translateY(-3px); }
+.highlight-card .hi-icon { font-size: 2.2rem; display: block; margin-bottom: 8px; }
+.highlight-card .hi-title { font-size: 0.92rem; font-weight: 700; color: var(--red-dark); margin-bottom: 4px; }
+.highlight-card .hi-desc { font-size: 0.78rem; color: var(--text-light); line-height: 1.5; }
+@media (max-width: 600px) { .highlight-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.day-badge {
+  display: inline-block;
+  background: var(--red);
+  color: white;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.rating-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px var(--shadow);
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+.rating-card h3 { font-size: 0.95rem; color: var(--brown); font-weight: 700; margin-bottom: 14px; }
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.88rem;
+}
+.rating-row:last-child { border-bottom: none; }
+.rating-row .r-label { color: var(--text); }
+.rating-row .r-stars { color: #F39C12; font-size: 1rem; letter-spacing: 2px; }
+.rating-row .r-note { font-size: 0.78rem; color: var(--text-light); }
+
+.budget-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.budget-quick-card { border-radius: 12px; padding: 16px 12px; text-align: center; color: white; }
+.budget-quick-card.bq-stay    { background: linear-gradient(135deg, #C0392B, #96281B); }
+.budget-quick-card.bq-transit { background: linear-gradient(135deg, #2980B9, #1A5276); }
+.budget-quick-card.bq-ticket  { background: linear-gradient(135deg, #E67E22, #CA6F1E); }
+.budget-quick-card.bq-food    { background: linear-gradient(135deg, #27AE60, #1E8449); }
+.budget-quick-card .bq-icon   { font-size: 1.6rem; display: block; margin-bottom: 6px; }
+.budget-quick-card .bq-label  { font-size: 0.78rem; opacity: 0.88; }
+.budget-quick-card .bq-amount { font-size: 1.3rem; font-weight: 800; margin: 4px 0; }
+.budget-quick-card .bq-sub    { font-size: 0.72rem; opacity: 0.8; }
+@media (max-width: 600px) { .budget-quick-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ── 交通攻略 ── */
+.accordion-group { margin-bottom: 24px; }
+.accordion-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px var(--shadow);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.accordion-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--red-dark);
+  border-left: 5px solid var(--red);
+  transition: background 0.2s;
+}
+.accordion-trigger:hover { background: var(--cream); }
+.accordion-trigger .acc-icon { font-size: 1.2rem; margin-right: 10px; }
+.accordion-trigger .acc-arrow { font-size: 0.9rem; transition: transform 0.3s; color: var(--text-light); }
+.accordion-item.open .acc-arrow { transform: rotate(180deg); }
+.accordion-body { display: none; padding: 0 20px 18px; border-top: 1px solid var(--border); }
+.accordion-item.open .accordion-body { display: block; }
+
+.route-segment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--border);
+  flex-wrap: wrap;
+}
+.route-segment:last-child { border-bottom: none; }
+.route-from, .route-to {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.route-arrow { font-size: 1.1rem; color: var(--red); flex-shrink: 0; }
+.route-meta { margin-left: auto; text-align: right; font-size: 0.82rem; color: var(--text-light); }
+.route-meta .route-cost { display: block; font-weight: 700; color: var(--red-dark); font-size: 0.92rem; }
+.route-meta .route-time { display: block; font-size: 0.78rem; }
+.route-tag {
+  display: inline-block;
+  background: #E8F4FD;
+  border: 1px solid #A9CCE3;
+  color: #1A5276;
+  border-radius: 4px;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ── 備選景點 ── */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0 16px;
+}
+.section-divider .sd-icon { font-size: 1.4rem; }
+.section-divider h3 { font-size: 1.1rem; font-weight: 700; color: var(--red-dark); }
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, var(--red-light), transparent);
+}
+.alt-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.alt-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px var(--shadow);
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.2s;
+}
+.alt-card:hover { box-shadow: 0 4px 18px var(--shadow); }
+.alt-card .ac-icon  { font-size: 2rem; }
+.alt-card .ac-name  { font-size: 0.97rem; font-weight: 700; color: var(--red-dark); }
+.alt-card .ac-stars { color: #F39C12; font-size: 0.88rem; letter-spacing: 1px; }
+.alt-card .ac-desc  { font-size: 0.82rem; color: var(--text-light); line-height: 1.55; flex: 1; }
+.ac-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.ac-tag { display: inline-block; border-radius: 4px; padding: 2px 8px; font-size: 0.73rem; font-weight: 600; }
+.ac-tag.transport { background: #E8F4FD; color: #1A5276; border: 1px solid #A9CCE3; }
+.ac-tag.ticket    { background: #FFF3CD; color: #856404; border: 1px solid #F0C040; }
+.ac-tag.free      { background: #D4EDDA; color: #155724; border: 1px solid #C3E6CB; }
+@media (max-width: 600px) { .alt-card-grid { grid-template-columns: 1fr; } }
+
+/* ── 行前準備：簽證 / 天氣 ── */
+.info-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 9px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.9rem;
+}
+.info-row:last-child { border-bottom: none; }
+.info-row .ir-icon  { font-size: 1.15rem; flex-shrink: 0; margin-top: 1px; }
+.info-row .ir-label { font-weight: 700; color: var(--red-dark); min-width: 90px; flex-shrink: 0; }
+.info-row .ir-value { color: var(--text); }
+
+.card-header.blue { background: linear-gradient(135deg, #2980B9 0%, #1A5276 100%); }
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.weather-item {
+  background: #E8F4FD;
+  border-radius: 8px;
+  padding: 12px 14px;
+  border-left: 4px solid #2980B9;
+}
+.weather-item .wi-city { font-size: 0.78rem; color: #1A5276; font-weight: 700; }
+.weather-item .wi-temp { font-size: 1.15rem; font-weight: 800; color: #1A5276; margin: 4px 0; }
+.weather-item .wi-desc { font-size: 0.8rem; color: #2C3E50; }
+
+.outfit-list { list-style: none; padding: 0; margin-top: 14px; }
+.outfit-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 0.88rem;
+}
+.outfit-list li:last-child { border-bottom: none; }
+.outfit-list .ol-icon { font-size: 1.1rem; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>&#x1F43C; 成都・重慶 旅遊行程 &#x1F336;&#xFE0F;</h1>
+  <p class="subtitle">2026 年 9 月 19 日 &#8212; 9 月 28 日&#xFF5C;9天8夜&#xFF5C;2人同行</p>
+  <div class="header-badges">
+    <span class="badge">&#x1F4CD; 成都 + 九寨溝 + 重慶</span>
+    <span class="badge">&#x1F4B0; 每人約台幣 15,664</span>
+    <span class="badge">&#x1F3E8; 三地住宿</span>
+    <span class="badge">&#x1F684; 高鐵串聯</span>
+  </div>
+</header>
+
+<nav class="tab-nav-wrapper">
+  <div class="tab-nav" id="tabNav">
+    <button class="tab-btn active" data-tab="overview">&#x1F5FA;&#xFE0F; 快速總覽</button>
+    <button class="tab-btn" data-tab="prep">&#x1F4CB; 行前準備</button>
+    <button class="tab-btn" data-tab="day1">Day 1</button>
+    <button class="tab-btn" data-tab="day2">Day 2</button>
+    <button class="tab-btn" data-tab="day3">Day 3</button>
+    <button class="tab-btn" data-tab="day4">Day 4</button>
+    <button class="tab-btn" data-tab="day5">Day 5</button>
+    <button class="tab-btn" data-tab="day6">Day 6</button>
+    <button class="tab-btn" data-tab="day7">Day 7</button>
+    <button class="tab-btn" data-tab="day8">Day 8</button>
+    <button class="tab-btn" data-tab="day9">Day 9</button>
+    <button class="tab-btn" data-tab="budget">&#x1F4B0; 預算總覽</button>
+    <button class="tab-btn" data-tab="transport">&#x1F687; 交通攻略</button>
+    <button class="tab-btn" data-tab="alternatives">&#x2728; 備選景點</button>
+    <button class="tab-btn" data-tab="info">&#x1F5FA;&#xFE0F; 實用資訊</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- 快速總覽 -->
+<section class="tab-content active" id="tab-overview">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F5FA;&#xFE0F;</span>
+    <div><h2>&#x1F5FA;&#xFE0F; 快速總覽</h2></div>
+  </div>
+
+  <!-- 旅遊亮點 -->
+  <div class="highlight-grid">
+    <div class="highlight-card"><span class="hi-icon">&#x1F43C;</span><div class="hi-title">大熊貓近距離相遇</div><div class="hi-desc">世界最知名熊貓基地，上午場親眼看熊貓吃竹子</div></div>
+    <div class="highlight-card"><span class="hi-icon">&#x1F3D4;&#xFE0F;</span><div class="hi-title">九寨溝彩色湖泊仙境</div><div class="hi-desc">五花海、鏡海、珍珠灘瀑布，秋季初染山色</div></div>
+    <div class="highlight-card"><span class="hi-icon">&#x1F306;</span><div class="hi-title">重慶洪崖洞燈光秀</div><div class="hi-desc">千層吊腳樓夜間點燈，宮崎駿風格山城夜景</div></div>
+    <div class="highlight-card"><span class="hi-icon">&#x1F336;&#xFE0F;</span><div class="hi-title">雙城美食對決</div><div class="hi-desc">成都串串香・火鍋，重慶小麵・防空洞吃到飽</div></div>
+    <div class="highlight-card"><span class="hi-icon">&#x1F687;</span><div class="hi-title">輕軌穿樓奇景</div><div class="hi-desc">重慶2號線穿越居民大樓，全球獨一無二免費觀看</div></div>
+    <div class="highlight-card"><span class="hi-icon">&#x1F5FA;&#xFE0F;</span><div class="hi-title">三地風情一次收齊</div><div class="hi-desc">成都悠閒文化＋九寨高原奇景＋重慶立體山城</div></div>
+  </div>
+
+  <!-- 行程總表 -->
+  <div class="card">
+    <div class="card-header"><span>&#x1F4C5;</span><h3>9天行程總覽</h3></div>
+    <div class="card-body">
+      <div class="overflow-table">
+        <table class="data-table">
+          <thead><tr><th>天次</th><th>日期</th><th>地點</th><th>主要活動</th><th>住宿</th></tr></thead>
+          <tbody>
+            <tr><td><span class="day-badge">Day 1</span></td><td>9/19（六）</td><td>成都</td><td>深夜抵達，辦理入住</td><td>成都</td></tr>
+            <tr><td><span class="day-badge">Day 2</span></td><td>9/20（日）</td><td>成都</td><td>熊貓基地 + 武侯祠 + 錦里 + 串串香</td><td>成都</td></tr>
+            <tr><td><span class="day-badge">Day 3</span></td><td>9/21（一）</td><td>成都</td><td>寬窄巷子 + 春熙路 + 火鍋吃到飽</td><td>成都</td></tr>
+            <tr><td><span class="day-badge">Day 4</span></td><td>9/22（二）</td><td>成都→九寨溝</td><td>高鐵出發，抵達九寨溝縣城，適應海拔</td><td>九寨溝</td></tr>
+            <tr><td><span class="day-badge">Day 5</span></td><td>9/23（三）</td><td>九寨溝</td><td>九寨溝國家公園全日遊（日則溝+樹正溝）</td><td>九寨溝</td></tr>
+            <tr><td><span class="day-badge">Day 6</span></td><td>9/24（四）</td><td>九寨溝→重慶</td><td>高鐵前往重慶，洪崖洞燈光秀</td><td>重慶</td></tr>
+            <tr><td><span class="day-badge">Day 7</span></td><td>9/25（五）</td><td>重慶</td><td>磁器口 + 輕軌穿樓 + 長江索道</td><td>重慶</td></tr>
+            <tr><td><span class="day-badge">Day 8</span></td><td>9/26（六）</td><td>重慶</td><td>鵝嶺二廠 + 防空洞火鍋吃到飽 + 解放碑夜景</td><td>重慶</td></tr>
+            <tr><td><span class="day-badge">Day 9</span></td><td>9/27（日）</td><td>重慶→成都→返台</td><td>高鐵回成都搭下午機返台</td><td>機上</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 預算速覽 -->
+  <div class="budget-quick-grid">
+    <div class="budget-quick-card bq-stay"><span class="bq-icon">&#x1F3E8;</span><div class="bq-label">住宿</div><div class="bq-amount">NT$ 12,848</div><div class="bq-sub">2人8晚</div></div>
+    <div class="budget-quick-card bq-transit"><span class="bq-icon">&#x1F684;</span><div class="bq-label">交通</div><div class="bq-amount">NT$ 5,016</div><div class="bq-sub">城際高鐵</div></div>
+    <div class="budget-quick-card bq-ticket"><span class="bq-icon">&#x1F3AB;</span><div class="bq-label">門票</div><div class="bq-amount">NT$ 3,828</div><div class="bq-sub">九寨溝等</div></div>
+    <div class="budget-quick-card bq-food"><span class="bq-icon">&#x1F35C;</span><div class="bq-label">餐飲</div><div class="bq-amount">NT$ 8,976</div><div class="bq-sub">2人9天</div></div>
+  </div>
+
+  <!-- 評分卡 -->
+  <div class="rating-card">
+    <h3>&#x2B50; 行程適合度評分</h3>
+    <div class="rating-row"><span class="r-label">景色豐富度</span><span class="r-stars">★★★★★</span><span class="r-note">九寨溝彩湖+重慶夜景</span></div>
+    <div class="rating-row"><span class="r-label">美食體驗</span><span class="r-stars">★★★★★</span><span class="r-note">雙城火鍋・吃到飽・小吃</span></div>
+    <div class="rating-row"><span class="r-label">交通便利度</span><span class="r-stars">★★★★☆</span><span class="r-note">高鐵快速，九寨溝需接駁</span></div>
+    <div class="rating-row"><span class="r-label">性價比</span><span class="r-stars">★★★★☆</span><span class="r-note">每人約台幣1.5萬（不含機票）</span></div>
+    <div class="rating-row"><span class="r-label">適合情侶/朋友</span><span class="r-stars">★★★★★</span><span class="r-note">浪漫燈光秀+美食共享</span></div>
+  </div>
+
+  <!-- 注意事項速查 -->
+  <div class="card">
+    <div class="card-header"><span>&#x26A0;&#xFE0F;</span><h3>出發前 Top 5 注意事項</h3></div>
+    <div class="card-body">
+      <div class="info-row"><span class="ir-icon">&#x1F3AB;</span><span class="ir-label">九寨溝預約</span><span class="ir-value">全面實名制，現場無票，建議 9/8 前完成線上預約</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F43C;</span><span class="ir-label">熊貓基地</span><span class="ir-value">每日限流，旺季需提前預約，建議 9/6 前訂票</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F4F1;</span><span class="ir-label">支付寶設定</span><span class="ir-value">在台灣出發前綁定境外信用卡，現場設定容易遇障礙</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F9E5;</span><span class="ir-label">九寨溝保暖</span><span class="ir-value">氣溫 7–18°C，日夜溫差大，厚外套必備</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F4D8;</span><span class="ir-label">台胞證辦理</span><span class="ir-value">透過旅行社代辦（雄獅/東南/鳳凰），費用約 NT$1,500–2,500，需 7–14 天</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 行前準備 -->
+<section class="tab-content" id="tab-prep">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F4CB;</span>
+    <div><h2>行前準備</h2><p class="meta">出發前必辦事項・預約時程・天氣穿衣</p></div>
+  </div>
+
+  <!-- ★ 新增：簽證與入境 -->
+  <div class="card">
+    <div class="card-header"><span>&#x1F6C2;</span><h3>簽證與入境</h3></div>
+    <div class="card-body">
+      <div class="info-row"><span class="ir-icon">&#x1F4D8;</span><span class="ir-label">入境證件</span><span class="ir-value">台灣旅客需持 <strong>台胞證</strong>（台灣居民來往大陸通行證）入境，⚠️ 台灣護照在中國大陸不受理</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F3EA;</span><span class="ir-label">辦理方式</span><span class="ir-value">透過旅行社代辦（雄獅、東南、鳳凰等），費用約 NT$1,500–2,500，需 7–14 個工作天</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F4C4;</span><span class="ir-label">所需文件</span><span class="ir-value">身分證正反面影本、護照影本、2吋白底照片2張、填寫申請表</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F4C5;</span><span class="ir-label">有效期限</span><span class="ir-value">台胞證有效期 5 年，出發前確認距到期日至少 6 個月以上</span></div>
+      <div class="info-row"><span class="ir-icon">&#x2708;&#xFE0F;</span><span class="ir-label">入境流程</span><span class="ir-value">落地 → 港澳台旅客通道 → 出示台胞證 → 按指紋拍照 → 提取行李 → 海關申報（現金超過 USD 5,000 須申報）</span></div>
+      <div class="info-row"><span class="ir-icon">&#x1F512;</span><span class="ir-label">網路管制</span><span class="ir-value">Google/YouTube/LINE 在中國大陸受限，出發前下載：高德地圖、微信、支付寶、滴滴、12306</span></div>
+    </div>
+  </div>
+
+  <!-- ★ 新增：天氣與穿著 -->
+  <div class="card">
+    <div class="card-header blue"><span>&#x1F324;&#xFE0F;</span><h3>天氣與穿著指南（9月）</h3></div>
+    <div class="card-body">
+      <div class="weather-grid">
+        <div class="weather-item"><div class="wi-city">&#x1F306; 成都</div><div class="wi-temp">22–28°C</div><div class="wi-desc">多陰雨、濕度高，隨身帶傘</div></div>
+        <div class="weather-item"><div class="wi-city">&#x1F3D4;&#xFE0F; 九寨溝</div><div class="wi-temp">7–22°C</div><div class="wi-desc">⭐ 最美秋色，日夜溫差15°C，需帶厚外套</div></div>
+        <div class="weather-item"><div class="wi-city">&#x1F336;&#xFE0F; 重慶</div><div class="wi-temp">21–34°C</div><div class="wi-desc">較成都熱3–5°C，山城爬坡多易流汗</div></div>
+      </div>
+      <ul class="outfit-list">
+        <li><span class="ol-icon">&#x1F455;</span><div><strong>成都・重慶市區</strong>：短袖為主，備薄外套，室內冷氣強</div></li>
+        <li><span class="ol-icon">&#x1F9E5;</span><div><strong>九寨溝山區</strong>：可壓縮薄羽絨外套（必備），快乾長褲，防滑健走鞋</div></li>
+        <li><span class="ol-icon">&#x2602;&#xFE0F;</span><div><strong>雨具</strong>：折疊傘或輕薄雨衣，各地午後易有陣雨</div></li>
+        <li><span class="ol-icon">&#x1F45F;</span><div><strong>鞋子</strong>：重慶坡道多，絕對不要穿高跟鞋，舒適平底鞋優先</div></li>
+        <li><span class="ol-icon">&#x1F48A;</span><div><strong>高原反應</strong>：九寨溝海拔 2,000–3,100m，建議提前 3 天服用紅景天</div></li>
+        <li><span class="ol-icon">&#x1F576;&#xFE0F;</span><div><strong>防曬</strong>：SPF50 防曬乳＋UV 袖套，九寨溝高海拔紫外線強</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert-box danger">
+    <span class="alert-icon">&#x1F6A8;</span>
+    <div><strong>九寨溝門票</strong>需在 <strong>2026年9月8日前</strong>完成線上預約，現場完全無票可買！<br>
+    官方網站：<a href="https://www.jiuzhai.com/" target="_blank">https://www.jiuzhai.com/</a></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>&#x1F4CC;</span><h3>出發前必辦清單</h3></div>
+    <div class="card-body">
+      <ul class="checklist">
+        <li><span class="check-icon">&#x1FAE3;</span><div><strong>台胞證</strong>：請在台灣移民署申辦，避免落地排隊耽誤行程。建議出發前 4 週辦妥。</div></li>
+        <li><span class="check-icon">&#x1F4B3;</span><div><strong>支付寶</strong>：出發前在台灣完成設定（需護照 + 國際 Visa/Mastercard 信用卡）。入境後幾乎所有消費均可使用。</div></li>
+        <li><span class="check-icon">&#x1F4AC;</span><div><strong>WeChat（微信）</strong>：在台灣完成帳號設定，2026 年已簡化外籍認證流程。</div></li>
+        <li><span class="check-icon">&#x1F3AB;</span><div><strong>九寨溝門票</strong>：<strong>9/8 前</strong>至 <a href="https://www.jiuzhai.com/" target="_blank">jiuzhai.com</a> 完成實名預約（需護照號碼）。現場無法購票！</div></li>
+        <li><span class="check-icon">&#x1F43C;</span><div><strong>大熊貓基地門票</strong>：建議 9/6 前透過 Klook 或微信小程式「成都大熊貓繁育研究基地」預約上午場（07:30 入場熊貓最活躍）。</div></li>
+        <li><span class="check-icon">&#x1F684;</span><div><strong>高鐵票</strong>：出發前 30 天（8/20 起）透過 Trip.com 或 12306 App 購票，九寨溝段尤其需要早買。</div></li>
+        <li><span class="check-icon">&#x1F4F6;</span><div><strong>SIM 卡</strong>：抵達成都天府國際機場後可購買（中國移動/聯通/電信），約 CNY 60。</div></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>&#x1F4C5;</span><h3>重要預約時程表</h3></div>
+    <div class="card-body">
+      <div class="overflow-table">
+        <table class="data-table">
+          <thead><tr><th>景點／服務</th><th>行程日期</th><th>預約截止建議</th><th>預約管道</th></tr></thead>
+          <tbody>
+            <tr><td><strong>九寨溝門票</strong></td><td>Day 5（9/23）</td><td style="color:#C0392B;font-weight:700;">9/8 前完成</td><td>jiuzhai.com</td></tr>
+            <tr><td>大熊貓基地門票</td><td>Day 2（9/20）</td><td>9/6 前完成</td><td>微信小程式 / Klook / Trip.com</td></tr>
+            <tr><td>九寨溝縣城住宿</td><td>Day 4–5</td><td>8 月中旬前訂</td><td>Trip.com / Booking.com</td></tr>
+            <tr><td>成都住宿</td><td>Day 1–3</td><td>8 月底前訂</td><td>Trip.com / Agoda</td></tr>
+            <tr><td>重慶住宿</td><td>Day 6–8</td><td>8 月底前訂</td><td>Trip.com / Agoda</td></tr>
+            <tr><td>高鐵票各段</td><td>全程</td><td>出發前 30 天</td><td>12306 App / Trip.com</td></tr>
+            <tr><td>長江索道排隊號</td><td>Day 7（9/25）</td><td>當天取號</td><td>微信小程式「重庆索道公司」</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>&#x1F324;&#xFE0F;</span><h3>9 月天氣與穿衣指南</h3></div>
+    <div class="card-body">
+      <div class="overflow-table">
+        <table class="data-table">
+          <thead><tr><th>地點</th><th>氣溫</th><th>穿衣建議</th></tr></thead>
+          <tbody>
+            <tr><td>成都</td><td>22–32°C</td><td>輕薄短袖 + 薄外套 + 折疊雨傘</td></tr>
+            <tr><td>九寨溝</td><td>7–18°C</td><td>厚外套必備，日夜溫差大，早晚需保暖</td></tr>
+            <tr><td>重慶（9月初）</td><td>31–38°C</td><td>輕薄透氣衣物 + 防曬 + 雨具</td></tr>
+            <tr><td>重慶（9月末）</td><td>23–28°C</td><td>薄外套備用，仍可能有短暫陣雨</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>&#x26A0;&#xFE0F;</span><h3>VINCE 注意事項與備案</h3></div>
+    <div class="card-body">
+      <div class="alert-box warning">
+        <span class="alert-icon">&#x1F4B0;</span>
+        <div><strong>預算提醒</strong>：當前預算每人約台幣 <strong>15,664 元</strong>，超出目標 664 元（4.4%）。節省方式：Day 9 午餐改為普通餐廳（省約台幣 350）+ 減少零食/紀念品支出即可達標。春熙路、太古里、磁器口購物費用<strong>未含</strong>在預算中，需自行另行預留。</div>
+      </div>
+      <div class="alert-box warning">
+        <span class="alert-icon">&#x2708;&#xFE0F;</span>
+        <div><strong>Day 9 趕機風險</strong>：若航班在 17:00 前起飛，13:00 從重慶出發可能偏晚。若航班早於 17:00，應提前至 <strong>11:00–12:00</strong> 出發，犧牲最後一個重慶景點。</div>
+      </div>
+      <h4 style="margin:16px 0 10px;color:var(--brown);font-size:0.95rem;">備案方案</h4>
+      <ul class="checklist">
+        <li><span class="check-icon">&#x1F3D4;&#xFE0F;</span><div><strong>若九寨溝票訂不到</strong>：可改安排樂山大佛一日遊（成都出發約 1.5 小時），或延長成都市區遊覽</div></li>
+        <li><span class="check-icon">&#x1F372;</span><div><strong>若防空洞火鍋排隊過長</strong>：可改為解放碑商圈其他火鍋店</div></li>
+        <li><span class="check-icon">&#x1F684;</span><div><strong>若 Day 9 航班早於 17:00</strong>：提早搭 11:00 高鐵出發，跳過最後景點</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 1 -->
+<section class="tab-content" id="tab-day1">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x2708;&#xFE0F;</span>
+    <div><h2>Day 1 — 深夜抵達成都</h2><p class="meta">9 月 19 日（週六）</p></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F319;</span><h3>晚上</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <strong>抵達成都天府國際機場</strong>：辦理入境、領行李、購買 SIM 卡（中國移動/聯通/電信，約 CNY 60）
+          <span class="addr">&#x1F4CD; 四川省成都市簡陽市蘆葭鎮成都天府國際機場 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E7%B0%A1%E9%99%BD%E5%B8%82%E8%98%86%E8%91%AD%E9%8E%AE%E6%88%90%E9%83%BD%E5%A4%A9%E5%BA%9C%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>搭乘地鐵 18 號線前往市區</strong>（約 40 分鐘），安頓入住
+          <div class="transport">🚇 交通方式：地鐵10號線 → 市區（或滴滴打車），約40–60分鐘</div>
+        </li>
+        <li>
+          <strong>住宿：吉住酒店成都春熙路店</strong>（CNY 420 / 晚）｜宵夜：便利商店，約 CNY 30
+          <span class="addr">&#x1F4CD; 四川省成都市錦江區東大街步行街208號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E6%9D%B1%E5%A4%A7%E8%A1%97%E6%AD%A5%E8%A1%8C%E8%A1%97208%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 1 預算小計</h4>
+        <div class="budget-row"><span>交通（機場地鐵）CNY 10 × 2</span><span>CNY 20</span></div>
+        <div class="budget-row"><span>SIM 卡</span><span>約 CNY 60</span></div>
+        <div class="budget-row"><span>宵夜（便利商店）</span><span>約 CNY 30</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 420</span></div>
+        <div class="budget-row"><span>小計（約台幣 2,335）</span><span>約 CNY 530</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 1 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E6%88%90%E9%83%BD%E5%A4%A9%E5%BA%9C%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E6%9D%B1%E5%A4%A7%E8%A1%97%E6%AD%A5%E8%A1%8C%E8%A1%97208%E8%99%9F" target="_blank">&#x1F4CD; 開啟 Day 1 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 2 -->
+<section class="tab-content" id="tab-day2">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F43C;</span>
+    <div><h2>Day 2 — 熊貓基地 + 武侯祠 + 錦里</h2><p class="meta">9 月 20 日（週日）｜成都市區精華</p></div>
+  </div>
+  <div class="alert-box info">
+    <span class="alert-icon">&#x1F4A1;</span>
+    <div>上午 07:30 入場熊貓最活躍，請提前預約上午場。武侯祠建議微信公眾號換票避免排隊。</div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午（07:30 出發）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <strong>成都大熊貓繁育研究基地</strong><span class="ticket-badge">門票 CNY 55</span><br>
+          上午場 07:30 入場最佳，建議遊覽 2.5–3 小時，需提前預約
+          <span class="addr">&#x1F4CD; 四川省成都市成華區熊貓大道1375號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%88%90%E8%8F%AF%E5%8D%80%E7%86%8A%E8%B2%93%E5%A4%A7%E9%81%931375%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <div class="transport">🚇 交通方式：地鐵3號線 → 熊貓大道站，再步行或打車（約40分鐘）</div>
+          <strong>午餐：龍抄手總店</strong>｜成都老字號，套餐約 CNY 48 / 人
+          <span class="addr">&#x1F4CD; 四川省成都市錦江區春熙路南段68號群光百貨樓下 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E6%98%A5%E7%86%99%E8%B7%AF%E5%8D%97%E6%AE%B568%E8%99%9F%E7%BE%A4%E5%85%89%E7%99%BE%E8%B2%A8%E6%A8%93%E4%B8%8B" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F305;</span><h3>下午（13:30）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚕 交通方式：滴滴打車 熊貓基地 → 武侯祠（約30分鐘，約CNY15）</div>
+          <strong>武侯祠博物館</strong><span class="ticket-badge">門票 CNY 50</span><br>
+          中國唯一君臣合祀祠廟，建議遊覽 1.5–2 小時
+          <span class="addr">&#x1F4CD; 四川省成都市武侯區武侯祠大街231號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%AD%A6%E4%BE%AF%E5%8D%80%E6%AD%A6%E4%BE%AF%E7%A5%A0%E5%A4%A7%E8%A1%97231%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <div class="transport">🚶 交通方式：步行 武侯祠 → 錦里（緊鄰武侯祠，約2分鐘）</div>
+          <strong>錦里古街</strong><span class="free-badge">免費</span><br>
+          武侯祠旁仿古商業街，傍晚燈籠亮起最美，逛街 + 品嚐成都小吃
+          <span class="addr">&#x1F4CD; 四川省成都市武侯區武侯祠大街231號（錦里入口） <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%AD%A6%E4%BE%AF%E5%8D%80%E6%AD%A6%E4%BE%AF%E7%A5%A0%E5%A4%A7%E8%A1%97231%E8%99%9F%EF%BC%88%E9%8C%A6%E9%87%8C%E5%85%A5%E5%8F%A3%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>晚餐：冒椒火辣串串香（奎星樓店）</strong>｜成都必吃串串香，人均約 CNY 80
+          <span class="addr">&#x1F4CD; 四川省成都市青羊區奎星樓街33號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E5%A5%8E%E6%98%9F%E6%A8%93%E8%A1%9733%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F3E8;</span><h3>住宿</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>吉住酒店成都春熙路店</strong>（CNY 420 / 晚）<span class="addr">&#x1F4CD; 四川省成都市錦江區東大街步行街208號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E6%9D%B1%E5%A4%A7%E8%A1%97%E6%AD%A5%E8%A1%8C%E8%A1%97208%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span></li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 2 預算小計</h4>
+        <div class="budget-row"><span>熊貓基地門票 CNY 55 × 2</span><span>CNY 110</span></div>
+        <div class="budget-row"><span>武侯祠門票 CNY 50 × 2</span><span>CNY 100</span></div>
+        <div class="budget-row"><span>午餐（龍抄手）CNY 48 × 2</span><span>CNY 96</span></div>
+        <div class="budget-row"><span>晚餐（串串香）CNY 80 × 2</span><span>CNY 160</span></div>
+        <div class="budget-row"><span>交通（地鐵）</span><span>CNY 20</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 420</span></div>
+        <div class="budget-row"><span>小計（約台幣 3,990）</span><span>約 CNY 906</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 2 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%88%90%E8%8F%AF%E5%8D%80%E7%86%8A%E8%B2%93%E5%A4%A7%E9%81%931375%E8%99%9F/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E6%98%A5%E7%86%99%E8%B7%AF%E5%8D%97%E6%AE%B568%E8%99%9F/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%AD%A6%E4%BE%AF%E5%8D%80%E6%AD%A6%E4%BE%AF%E7%A5%A0%E5%A4%A7%E8%A1%97231%E8%99%9F/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E5%A5%8E%E6%98%9F%E6%A8%93%E8%A1%9733%E8%99%9F" target="_blank">&#x1F4CD; 開啟 Day 2 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 3 -->
+<section class="tab-content" id="tab-day3">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F3EE;</span>
+    <div><h2>Day 3 — 寬窄巷子 + 春熙路 + 太古里</h2><p class="meta">9 月 21 日（週一）｜成都悠閒日</p></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚇 交通方式：地鐵4號線 → 寬窄巷子站（約20分鐘）</div>
+          <strong>寬窄巷子</strong><span class="free-badge">免費</span><br>
+          清代歷史街區，散步 + 拍照 + 品嚐街頭小吃（蛋烘糕、三大炮），建議遊覽 1.5–2 小時
+          <span class="addr">&#x1F4CD; 四川省成都市青羊區長順上街（寬巷子入口） <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E9%95%B7%E9%A0%86%E4%B8%8A%E8%A1%97%EF%BC%88%E5%AF%AC%E5%B7%B7%E5%AD%90%E5%85%A5%E5%8F%A3%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>午餐：韓中精英烤肉自助</strong>（吃到飽）｜人均約 CNY 29
+          <br><span style="font-size:0.8rem;color:var(--warning);">&#x26A0;&#xFE0F; 請出發前以大眾點評搜尋確認最新地址</span>
+          <span class="addr">&#x1F4CD; 四川省成都市青羊區西大街附近 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E8%A5%BF%E5%A4%A7%E8%A1%97%E9%99%84%E8%BF%91" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F305;</span><h3>下午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚇 交通方式：地鐵2號線 寬窄巷子 → 春熙路（約15分鐘）</div>
+          <strong>春熙路 + IFS 國際金融中心</strong><span class="free-badge">免費</span><br>
+          成都最繁華商業步行街，IFS 屋頂大熊貓為必拍打卡點，建議 2–3 小時
+          <span class="addr">&#x1F4CD; 四川省成都市錦江區紅星路三段1號（成都IFS） <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E7%B4%85%E6%98%9F%E8%B7%AF%E4%B8%89%E6%AE%B51%E8%99%9F%EF%BC%88%E6%88%90%E9%83%BDIFS%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>太古里逛街</strong><span class="free-badge">免費</span><br>
+          時尚品牌 + 露天步行商場，感受成都都市風貌
+          <span class="addr">&#x1F4CD; 四川省成都市錦江區中紗帽街8號（成都遠洋太古里） <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E4%B8%AD%E7%B4%97%E5%B8%BD%E8%A1%978%E8%99%9F%EF%BC%88%E6%88%90%E9%83%BD%E9%81%A0%E6%B4%8B%E5%A4%AA%E5%8F%A4%E9%87%8C%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>晚餐：皇城老媽火鍋</strong>｜高檔裝潢 + 川劇變臉表演，人均約 CNY 120–150
+          <span class="addr">&#x1F4CD; 四川省成都市青羊區紫荊東二路2號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E7%B4%AB%E8%8D%8A%E6%9D%B1%E4%BA%8C%E8%B7%AF2%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F3E8;</span><h3>住宿</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>吉住酒店成都春熙路店</strong>（CNY 420 / 晚）<span class="addr">&#x1F4CD; 四川省成都市錦江區東大街步行街208號 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E6%9D%B1%E5%A4%A7%E8%A1%97%E6%AD%A5%E8%A1%8C%E8%A1%97208%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span></li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 3 預算小計（不含購物）</h4>
+        <div class="budget-row"><span>午餐吃到飽 CNY 29 × 2</span><span>CNY 58</span></div>
+        <div class="budget-row"><span>晚餐火鍋 CNY 130 × 2</span><span>CNY 260</span></div>
+        <div class="budget-row"><span>交通（地鐵）</span><span>CNY 20</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 420</span></div>
+        <div class="budget-row"><span>小計（約台幣 3,340）</span><span>約 CNY 758</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 3 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E9%95%B7%E9%A0%86%E4%B8%8A%E8%A1%97/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E7%B4%85%E6%98%9F%E8%B7%AF%E4%B8%89%E6%AE%B51%E8%99%9F/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%8C%A6%E6%B1%9F%E5%8D%80%E4%B8%AD%E7%B4%97%E5%B8%BD%E8%A1%978%E8%99%9F/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E9%9D%92%E7%BE%8A%E5%8D%80%E7%B4%AB%E8%8D%8A%E6%9D%B1%E4%BA%8C%E8%B7%AF2%E8%99%9F" target="_blank">&#x1F4CD; 開啟 Day 3 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 4 -->
+<section class="tab-content" id="tab-day4">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F684;</span>
+    <div><h2>Day 4 — 成都 → 九寨溝</h2><p class="meta">9 月 22 日（週二）｜高鐵出發移動日</p></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午（07:30 出發）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚇 交通方式：地鐵 → 成都東站，高鐵 成都東站 → 黃龍九寨站（約1小時40分，約CNY89），再轉接駁巴士（約30分鐘）</div>
+          <strong>前往成都東站</strong>｜搭地鐵至成都東站，高鐵至黃龍九寨站（約 1 小時 39 分），高鐵票 CNY 100–150 / 人
+          <span class="addr">&#x1F4CD; 四川省成都市成華區二環路東一段成都東站 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%88%90%E8%8F%AF%E5%8D%80%E4%BA%8C%E7%92%B0%E8%B7%AF%E6%9D%B1%E4%B8%80%E6%AE%B5%E6%88%90%E9%83%BD%E6%9D%B1%E7%AB%99" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>黃龍九寨站 → 九寨溝縣城</strong>｜接駁車或計程車（約 2 小時）
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣黃龍九寨高鐵站 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E9%BB%83%E9%BE%8D%E4%B9%9D%E5%AF%A8%E9%AB%98%E9%90%B5%E7%AB%99" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F305;</span><h3>下午（約 12:00–13:00 抵達）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>辦理入住、午餐休息</strong>｜適應高度（海拔約 1,900m）</li>
+        <li>
+          <strong>縣城漫步</strong>｜感受藏族風情，逛特產市場（氂牛肉乾、藏飾品）
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣漳扎鎮正街 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%E6%AD%A3%E8%A1%97" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>晚餐：縣城藏式餐廳</strong>｜藏式料理、氂牛火鍋，人均約 CNY 60–80
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣漳扎鎮正街 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%E6%AD%A3%E8%A1%97" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F3E8;</span><h3>住宿</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>九寨溝縣城民宿</strong>（CNY 350 / 晚，優先選含早餐方案）<span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣漳扎鎮 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span></li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 4 預算小計</h4>
+        <div class="budget-row"><span>高鐵票（成都東→黃龍九寨）CNY 130 × 2</span><span>CNY 260</span></div>
+        <div class="budget-row"><span>接駁車 CNY 50 × 2</span><span>CNY 100</span></div>
+        <div class="budget-row"><span>午餐</span><span>CNY 40</span></div>
+        <div class="budget-row"><span>晚餐 CNY 70 × 2</span><span>CNY 140</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 350</span></div>
+        <div class="budget-row"><span>小計（約台幣 3,920）</span><span>約 CNY 890</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 4 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%88%90%E8%8F%AF%E5%8D%80%E4%BA%8C%E7%92%B0%E8%B7%AF%E6%9D%B1%E4%B8%80%E6%AE%B5%E6%88%90%E9%83%BD%E6%9D%B1%E7%AB%99/%E9%BB%83%E9%BE%8D%E4%B9%9D%E5%AF%A8%E9%AB%98%E9%90%B5%E7%AB%99/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%E6%AD%A3%E8%A1%97" target="_blank">&#x1F4CD; 開啟 Day 4 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 5 -->
+<section class="tab-content" id="tab-day5">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F3D4;&#xFE0F;</span>
+    <div><h2>Day 5 — 九寨溝國家公園全日遊</h2><p class="meta">9 月 23 日（週三）</p></div>
+  </div>
+  <div class="alert-box danger">
+    <span class="alert-icon">&#x1F6A8;</span>
+    <div><strong>九寨溝門票為全面線上實名預約制，現場無票可買！</strong><br>
+    請務必在 <strong>9/8 前</strong>完成預約：<a href="https://www.jiuzhai.com/" target="_blank">https://www.jiuzhai.com/</a>（需護照號碼）</div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F304;</span><h3>全天（07:30 進園）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚌 交通方式：景區內觀光車（含景區通票，銜接各景點）</div>
+          <strong>九寨溝國家公園</strong><span class="ticket-badge">門票 CNY 280（入場 CNY 190 + 觀光車 CNY 90）</span><br>
+          <strong>日則溝：</strong>五花海 → 鏡海 → 珍珠灘瀑布<br>
+          <strong>樹正溝：</strong>樹正群海 → 犀牛海 → 雙龍海<br>
+          觀光車銜接各景點，無需大量步行
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣漳扎鎮九寨溝景區大門 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%E4%B9%9D%E5%AF%A8%E6%BA%9D%E6%99%AF%E5%8D%80%E5%A4%A7%E9%96%80" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>午餐：諾日朗服務中心</strong>（園內主要餐廳區），人均約 CNY 60–80
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣九寨溝景區諾日朗服務中心 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E4%B9%9D%E5%AF%A8%E6%BA%9D%E6%99%AF%E5%8D%80%E8%AB%BE%E6%97%A5%E6%9C%97%E6%9C%8D%E5%8B%99%E4%B8%AD%E5%BF%83" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>約 17:00 清場，搭觀光車返回大門口</li>
+        <li>
+          <strong>晚餐：縣城藏式餐廳</strong>，人均約 CNY 60
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣漳扎鎮正街 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%E6%AD%A3%E8%A1%97" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 5 預算小計</h4>
+        <div class="budget-row"><span>門票（入場+觀光車）CNY 280 × 2</span><span>CNY 560</span></div>
+        <div class="budget-row"><span>午餐 CNY 70 × 2</span><span>CNY 140</span></div>
+        <div class="budget-row"><span>晚餐 CNY 60 × 2</span><span>CNY 120</span></div>
+        <div class="budget-row"><span>住宿（同 Day 4）</span><span>CNY 350</span></div>
+        <div class="budget-row"><span>小計（約台幣 5,150）</span><span>約 CNY 1,170</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 5 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E4%B9%9D%E5%AF%A8%E6%BA%9D%E6%99%AF%E5%8D%80%E5%A4%A7%E9%96%80/%E4%B9%9D%E5%AF%A8%E6%BA%9D%E8%AB%BE%E6%97%A5%E6%9C%97%E6%9C%8D%E5%8B%99%E4%B8%AD%E5%BF%83/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%E6%AD%A3%E8%A1%97" target="_blank">&#x1F4CD; 開啟 Day 5 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 6 -->
+<section class="tab-content" id="tab-day6">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F309;</span>
+    <div><h2>Day 6 — 九寨溝 → 重慶 + 洪崖洞</h2><p class="meta">9 月 24 日（週四）</p></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午（06:30 出發）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚌 交通方式：接駁巴士 九寨溝縣城 → 黃龍九寨站（約2小時），高鐵 黃龍九寨站 → 重慶北站（約3小時，約CNY150）</div>
+          <strong>縣城 → 黃龍九寨站</strong>｜接駁車（約 2 小時），建議 06:30 出發趕早班高鐵
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣漳扎鎮（接駁車搭車點） <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E6%BC%B3%E6%89%8E%E9%8E%AE%EF%BC%88%E6%8E%A5%E9%A7%81%E8%BB%8A%E6%90%AD%E8%BB%8A%E9%BB%9E%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>高鐵：黃龍九寨站 → 重慶</strong>｜含轉乘，約 4–5 小時，票價 CNY 160 / 人
+          <span class="addr">&#x1F4CD; 四川省阿壩藏族羌族自治州九寨溝縣黃龍九寨高鐵站 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E9%98%BF%E5%A3%A9%E8%97%8F%E6%97%8F%E7%BE%8C%E6%97%8F%E8%87%AA%E6%B2%BB%E5%B7%9E%E4%B9%9D%E5%AF%A8%E6%BA%9D%E7%B8%A3%E9%BB%83%E9%BE%8D%E4%B9%9D%E5%AF%A8%E9%AB%98%E9%90%B5%E7%AB%99" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F306;</span><h3>下午 + 晚上</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚇 交通方式：重慶北站 → 地鐵6號線 → 小什字站 → 洪崖洞（約30分鐘）</div>
+          <strong>辦理入住</strong>｜稍事休息
+          <span class="addr">&#x1F4CD; 重慶市渝中區民生路283號（重慶解放碑嘉裕酒店） <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E6%B0%91%E7%94%9F%E8%B7%AF283%E8%99%9F%EF%BC%88%E9%87%8D%E6%85%B6%E8%A7%A3%E6%94%BE%E7%A2%91%E5%98%89%E8%A3%95%E9%85%92%E5%BA%97%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>洪崖洞白天遊覽</strong>（若抵達尚早）｜感受山城吊腳樓建築
+          <span class="addr">&#x1F4CD; 重慶市渝中區嘉陵江濱江路88號洪崖洞 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%98%89%E9%99%B5%E6%B1%9F%E6%BF%B1%E6%B1%9F%E8%B7%AF88%E8%99%9F%E6%B4%AA%E5%B4%96%E6%B4%9E" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>洪崖洞燈光秀</strong>｜19:30 燈光秀，建議 19:00 前到場卡位
+          <span class="addr">&#x1F4CD; 重慶市渝中區嘉陵江濱江路88號洪崖洞 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%98%89%E9%99%B5%E6%B1%9F%E6%BF%B1%E6%B1%9F%E8%B7%AF88%E8%99%9F%E6%B4%AA%E5%B4%96%E6%B4%9E" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>晚餐：趙二火鍋（洪崖洞倉白路店）</strong>｜重慶道地老火鍋，人均約 CNY 80
+          <span class="addr">&#x1F4CD; 重慶市渝中區倉白路56號 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%80%89%E7%99%BD%E8%B7%AF56%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 6 預算小計</h4>
+        <div class="budget-row"><span>接駁車 CNY 50 × 2</span><span>CNY 100</span></div>
+        <div class="budget-row"><span>高鐵票 CNY 160 × 2</span><span>CNY 320</span></div>
+        <div class="budget-row"><span>午餐（車上便當）</span><span>約 CNY 50</span></div>
+        <div class="budget-row"><span>晚餐火鍋 CNY 80 × 2</span><span>CNY 160</span></div>
+        <div class="budget-row"><span>交通（地鐵）</span><span>CNY 20</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 320</span></div>
+        <div class="budget-row"><span>小計（約台幣 4,270）</span><span>約 CNY 970</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 6 重慶路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E6%B0%91%E7%94%9F%E8%B7%AF283%E8%99%9F/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%98%89%E9%99%B5%E6%B1%9F%E6%BF%B1%E6%B1%9F%E8%B7%AF88%E8%99%9F%E6%B4%AA%E5%B4%96%E6%B4%9E/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%80%89%E7%99%BD%E8%B7%AF56%E8%99%9F" target="_blank">&#x1F4CD; 開啟 Day 6 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 7 -->
+<section class="tab-content" id="tab-day7">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F6A1;</span>
+    <div><h2>Day 7 — 磁器口 + 輕軌穿樓 + 長江索道</h2><p class="meta">9 月 25 日（週五）｜重慶精華</p></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚇 交通方式：地鐵1號線 → 磁器口站（約25分鐘）</div>
+          <strong>磁器口古鎮</strong><span class="free-badge">免費</span><br>
+          明清古鎮，傳統建築 + 重慶小吃（麻花、毛血旺），建議遊覽 2–3 小時
+          <span class="addr">&#x1F4CD; 重慶市沙坪壩區磁器口正街1號 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B2%99%E5%9D%AA%E5%A3%A9%E5%8D%80%E7%A3%81%E5%99%A8%E5%8F%A3%E6%AD%A3%E8%A1%971%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>午餐：磁器口古鎮內小吃</strong>｜麻花、毛血旺、豆花飯，人均約 CNY 40–50
+          <span class="addr">&#x1F4CD; 重慶市沙坪壩區磁器口古鎮正街 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B2%99%E5%9D%AA%E5%A3%A9%E5%8D%80%E7%A3%81%E5%99%A8%E5%8F%A3%E5%8F%A4%E9%8E%AE%E6%AD%A3%E8%A1%97" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F305;</span><h3>下午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚇 交通方式：地鐵1號線 磁器口 → 李子壩站（約15分鐘）</div>
+          <strong>李子壩站（輕軌穿樓）</strong><span class="free-badge">免費觀景台</span><br>
+          搭地鐵 2 號線至李子壩站，站外觀景台拍攝世界奇觀，地鐵票 CNY 2–4
+          <span class="addr">&#x1F4CD; 重慶市九龍坡區李子壩正街64號（李子壩觀景台） <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E4%B9%9D%E9%BE%8D%E5%9D%A1%E5%8D%80%E6%9D%8E%E5%AD%90%E5%A3%A9%E6%AD%A3%E8%A1%9764%E8%99%9F%EF%BC%88%E6%9D%8E%E5%AD%90%E5%A3%A9%E8%A7%80%E6%99%AF%E5%8F%B0%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <div class="transport">🚇 交通方式：步行+地鐵 李子壩站 → 長江索道渝中岸站（約20分鐘）</div>
+          <strong>長江索道</strong><span class="ticket-badge">來回 CNY 50</span><br>
+          傍晚搭乘最佳（17:00–18:00），橫跨長江 1,166 公尺，俯瞰兩岸壯觀景色
+          <span class="addr">&#x1F4CD; 重慶市渝中區新華路望龍門長江索道渝中岸站 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E6%96%B0%E8%8F%AF%E8%B7%AF%E6%9C%9B%E9%BE%8D%E9%96%80%E9%95%B7%E6%B1%9F%E7%B4%A2%E9%81%93%E6%B8%9D%E4%B8%AD%E5%B2%B8%E7%AB%99" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>晚餐：解放碑商圈</strong>｜自由選擇重慶本地風味，人均約 CNY 80
+          <span class="addr">&#x1F4CD; 重慶市渝中區解放碑步行街 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E8%A7%A3%E6%94%BE%E7%A2%91%E6%AD%A5%E8%A1%8C%E8%A1%97" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F3E8;</span><h3>住宿</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>重慶解放碑嘉裕酒店</strong>（同 Day 6）<span class="addr">&#x1F4CD; 重慶市渝中區民生路283號 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E6%B0%91%E7%94%9F%E8%B7%AF283%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span></li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 7 預算小計</h4>
+        <div class="budget-row"><span>午餐（磁器口小吃）CNY 45 × 2</span><span>CNY 90</span></div>
+        <div class="budget-row"><span>長江索道來回 CNY 50 × 2</span><span>CNY 100</span></div>
+        <div class="budget-row"><span>晚餐 CNY 80 × 2</span><span>CNY 160</span></div>
+        <div class="budget-row"><span>交通（地鐵）</span><span>CNY 30</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 320</span></div>
+        <div class="budget-row"><span>小計（約台幣 3,080）</span><span>約 CNY 700</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 7 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B2%99%E5%9D%AA%E5%A3%A9%E5%8D%80%E7%A3%81%E5%99%A8%E5%8F%A3%E6%AD%A3%E8%A1%971%E8%99%9F/%E9%87%8D%E6%85%B6%E5%B8%82%E4%B9%9D%E9%BE%8D%E5%9D%A1%E5%8D%80%E6%9D%8E%E5%AD%90%E5%A3%A9%E6%AD%A3%E8%A1%9764%E8%99%9F/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E6%96%B0%E8%8F%AF%E8%B7%AF%E6%9C%9B%E9%BE%8D%E9%96%80%E9%95%B7%E6%B1%9F%E7%B4%A2%E9%81%93%E6%B8%9D%E4%B8%AD%E5%B2%B8%E7%AB%99/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E8%A7%A3%E6%94%BE%E7%A2%91%E6%AD%A5%E8%A1%8C%E8%A1%97" target="_blank">&#x1F4CD; 開啟 Day 7 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 8 -->
+<section class="tab-content" id="tab-day8">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F3ED;</span>
+    <div><h2>Day 8 — 鵝嶺文創 + 防空洞吃到飽 + 夜景</h2><p class="meta">9 月 26 日（週六）｜重慶深度</p></div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <strong>解放碑步行街</strong><span class="free-badge">免費</span><br>
+          重慶市中心地標，拍照 + 感受山城都市繁華
+          <span class="addr">&#x1F4CD; 重慶市渝中區解放碑民權路步行街 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E8%A7%A3%E6%94%BE%E7%A2%91%E6%B0%91%E6%AC%8A%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <div class="transport">🚕 交通方式：滴滴打車 飯店 → 鵝嶺二廠（約15分鐘，約CNY10）</div>
+          <strong>鵝嶺二廠文創園</strong><span class="free-badge">免費</span><br>
+          老廠房改建文創園區，多個知名電影場景（《從你的全世界路過》），適合拍照
+          <span class="addr">&#x1F4CD; 重慶市渝中區鵝嶺正街2號 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E9%B5%9D%E5%B6%BA%E6%AD%A3%E8%A1%972%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <div class="transport">🚕 交通方式：滴滴打車 鵝嶺二廠 → 防空洞（約20分鐘）</div>
+          <strong>午餐：防空洞火鍋（轟炸大隊）</strong><span class="ticket-badge">吃到飽，人均 CNY 120–150</span><br>
+          位於 300 公尺長的二戰防空洞地道內，氣溫比外涼 10°C，重慶獨特體驗！
+          <span class="addr">&#x1F4CD; 重慶市渝中區人和街9號（防空洞火鍋） <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E4%BA%BA%E5%92%8C%E8%A1%979%E8%99%9F%EF%BC%88%E9%98%B2%E7%A9%BA%E6%B4%9E%E7%81%AB%E9%8D%8B%EF%BC%89" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F305;</span><h3>下午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <strong>千廝門大橋觀景台</strong><span class="free-badge">免費</span><br>
+          欣賞重慶洪崖洞與嘉陵江全景，絕佳打卡點
+          <span class="addr">&#x1F4CD; 重慶市渝中區千廝門大橋北橋頭觀景台 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%8D%83%E5%BB%9D%E9%96%80%E5%A4%A7%E6%A9%8B%E5%8C%97%E6%A9%8B%E9%A0%AD%E8%A7%80%E6%99%AF%E5%8F%B0" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>南濱路夜景</strong>（行有餘力）｜感受重慶對岸視角夜景
+          <span class="addr">&#x1F4CD; 重慶市南岸區南濱路 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E5%8D%97%E5%B2%B8%E5%8D%80%E5%8D%97%E6%BF%B1%E8%B7%AF" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>晚餐：趙武麵店</strong>（上過《早餐中國第二季》），人均 CNY 10–15
+          <span class="addr">&#x1F4CD; 重慶市渝中區中山一路83號 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E4%B8%AD%E5%B1%B1%E4%B8%80%E8%B7%AF83%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F3E8;</span><h3>住宿</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>重慶解放碑嘉裕酒店</strong>（同 Day 6）<span class="addr">&#x1F4CD; 重慶市渝中區民生路283號 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E6%B0%91%E7%94%9F%E8%B7%AF283%E8%99%9F" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span></li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 8 預算小計</h4>
+        <div class="budget-row"><span>午餐吃到飽（防空洞）CNY 135 × 2</span><span>CNY 270</span></div>
+        <div class="budget-row"><span>晚餐小麵 CNY 13 × 2</span><span>CNY 26</span></div>
+        <div class="budget-row"><span>交通（地鐵）</span><span>CNY 30</span></div>
+        <div class="budget-row"><span>住宿</span><span>CNY 320</span></div>
+        <div class="budget-row"><span>小計（約台幣 2,845）</span><span>約 CNY 646</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 8 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E8%A7%A3%E6%94%BE%E7%A2%91%E6%B0%91%E6%AC%8A%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E9%B5%9D%E5%B6%BA%E6%AD%A3%E8%A1%972%E8%99%9F/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E4%BA%BA%E5%92%8C%E8%A1%979%E8%99%9F/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E5%8D%83%E5%BB%9D%E9%96%80%E5%A4%A7%E6%A9%8B%E5%8C%97%E6%A9%8B%E9%A0%AD%E8%A7%80%E6%99%AF%E5%8F%B0/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B8%9D%E4%B8%AD%E5%8D%80%E4%B8%AD%E5%B1%B1%E4%B8%80%E8%B7%AF83%E8%99%9F" target="_blank">&#x1F4CD; 開啟 Day 8 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day 9 -->
+<section class="tab-content" id="tab-day9">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x2708;&#xFE0F;</span>
+    <div><h2>Day 9 — 重慶最終日 → 成都搭機</h2><p class="meta">9 月 27 日（週日）</p></div>
+  </div>
+  <div class="alert-box warning">
+    <span class="alert-icon">&#x26A0;&#xFE0F;</span>
+    <div><strong>趕機提醒</strong>：若航班早於 17:00 起飛，請提前至 <strong>11:00–12:00</strong> 從重慶出發，犧牲最後一個景點。建議事先確認具體起飛時間。</div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x2600;&#xFE0F;</span><h3>上午</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <strong>江北嘴中央公園</strong>（最後一遊）｜輕鬆散步，感受重慶最後風景
+          <span class="addr">&#x1F4CD; 重慶市江北區江北嘴中央公園 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B1%9F%E5%8C%97%E5%8D%80%E6%B1%9F%E5%8C%97%E5%98%B4%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>午餐：最後一頓重慶美食</strong>，人均約 CNY 80
+          <span class="addr">&#x1F4CD; 重慶市江北區觀音橋步行街附近 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B1%9F%E5%8C%97%E5%8D%80%E8%A7%80%E9%9F%B3%E6%A9%8B%E6%AD%A5%E8%A1%8C%E8%A1%97%E9%99%84%E8%BF%91" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header"><span>&#x1F684;</span><h3>下午（13:00 出發）</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li>
+          <div class="transport">🚄 交通方式：高鐵 重慶北站 → 成都東站（約1小時，約CNY54）</div>
+          <strong>高鐵：重慶北站 → 成都東站</strong>｜約 1 小時 2 分，票價 CNY 60–100 / 人
+          <span class="addr">&#x1F4CD; 重慶市江北區重慶北站 <a class="spot-link" href="https://www.google.com/maps/search/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B1%9F%E5%8C%97%E5%8D%80%E9%87%8D%E6%85%B6%E5%8C%97%E7%AB%99" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <div class="transport">🚇 交通方式：地鐵10號線 成都東站 → 天府國際機場（約30分鐘）</div>
+          <strong>成都東站 → 天府國際機場</strong>｜搭地鐵 18 號線（約 40 分鐘）
+          <span class="addr">&#x1F4CD; 四川省成都市成華區二環路東一段成都東站 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%88%90%E8%8F%AF%E5%8D%80%E4%BA%8C%E7%92%B0%E8%B7%AF%E6%9D%B1%E4%B8%80%E6%AE%B5%E6%88%90%E9%83%BD%E6%9D%B1%E7%AB%99" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+        <li>
+          <strong>成都天府國際機場出境</strong>｜建議起飛前 2.5 小時抵達機場
+          <span class="addr">&#x1F4CD; 四川省成都市簡陽市蘆葭鎮成都天府國際機場 <a class="spot-link" href="https://www.google.com/maps/search/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E7%B0%A1%E9%99%BD%E5%B8%82%E8%98%86%E8%91%AD%E9%8E%AE%E6%88%90%E9%83%BD%E5%A4%A9%E5%BA%9C%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4" target="_blank">&#x1F5FA;&#xFE0F; 查看地點</a></span>
+        </li>
+      </ul>
+      <div class="budget-mini">
+        <h4>Day 9 預算小計</h4>
+        <div class="budget-row"><span>午餐 CNY 80 × 2</span><span>CNY 160</span></div>
+        <div class="budget-row"><span>高鐵票（重慶→成都）CNY 80 × 2</span><span>CNY 160</span></div>
+        <div class="budget-row"><span>機場地鐵 CNY 10 × 2</span><span>CNY 20</span></div>
+        <div class="budget-row"><span>小計（約台幣 1,495）</span><span>約 CNY 340</span></div>
+      </div>
+      <div class="map-section">
+        <h4>&#x1F5FA;&#xFE0F; Day 9 路線圖</h4>
+        <a class="map-open-btn" href="https://www.google.com/maps/dir/%E9%87%8D%E6%85%B6%E5%B8%82%E6%B1%9F%E5%8C%97%E5%8D%80%E9%87%8D%E6%85%B6%E5%8C%97%E7%AB%99/%E5%9B%9B%E5%B7%9D%E7%9C%81%E6%88%90%E9%83%BD%E5%B8%82%E6%88%90%E8%8F%AF%E5%8D%80%E4%BA%8C%E7%92%B0%E8%B7%AF%E6%9D%B1%E4%B8%80%E6%AE%B5%E6%88%90%E9%83%BD%E6%9D%B1%E7%AB%99/%E6%88%90%E9%83%BD%E5%A4%A9%E5%BA%9C%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4" target="_blank">&#x1F4CD; 開啟 Day 9 完整路線（Google Maps）</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 預算總覽 -->
+<section class="tab-content" id="tab-budget">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F4B0;</span>
+    <div><h2>預算總覽</h2><p class="meta">2人合計，不含機票與購物</p></div>
+  </div>
+
+  <div class="budget-category">
+    <h3>&#x1F3E8; 住宿費用（8晚）</h3>
+    <div class="overflow-table">
+      <table class="data-table">
+        <thead><tr><th>住宿</th><th>單價/晚</th><th>晚數</th><th>兩人 CNY</th><th>兩人台幣</th></tr></thead>
+        <tbody>
+          <tr><td>吉住酒店成都春熙路店</td><td>CNY 420</td><td>3晚</td><td>1,260</td><td>5,544</td></tr>
+          <tr><td>九寨溝縣城民宿</td><td>CNY 350</td><td>2晚</td><td>700</td><td>3,080</td></tr>
+          <tr><td>重慶解放碑嘉裕酒店</td><td>CNY 320</td><td>3晚</td><td>960</td><td>4,224</td></tr>
+          <tr class="total-row"><td colspan="3"><strong>住宿合計</strong></td><td><strong>2,920</strong></td><td><strong>12,848</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="budget-category" style="margin-top:20px;">
+    <h3>&#x1F3AB; 門票費用</h3>
+    <div class="overflow-table">
+      <table class="data-table">
+        <thead><tr><th>景點</th><th>單價</th><th>人數</th><th>兩人 CNY</th><th>兩人台幣</th></tr></thead>
+        <tbody>
+          <tr><td>大熊貓基地</td><td>CNY 55</td><td>×2</td><td>110</td><td>484</td></tr>
+          <tr><td>武侯祠</td><td>CNY 50</td><td>×2</td><td>100</td><td>440</td></tr>
+          <tr><td>九寨溝（入場+觀光車）</td><td>CNY 280</td><td>×2</td><td>560</td><td>2,464</td></tr>
+          <tr><td>長江索道（來回）</td><td>CNY 50</td><td>×2</td><td>100</td><td>440</td></tr>
+          <tr class="total-row"><td colspan="3"><strong>門票合計</strong></td><td><strong>870</strong></td><td><strong>3,828</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="budget-category" style="margin-top:20px;">
+    <h3>&#x1F35C; 餐飲費用（9天）</h3>
+    <div class="overflow-table">
+      <table class="data-table">
+        <thead><tr><th>地區</th><th>說明</th><th>兩人 CNY</th><th>兩人台幣</th></tr></thead>
+        <tbody>
+          <tr><td>成都 3 天</td><td>含吃到飽+火鍋+其他</td><td>770</td><td>3,388</td></tr>
+          <tr><td>九寨溝 2 天</td><td>含縣城餐廳+諾日朗</td><td>500</td><td>2,200</td></tr>
+          <tr><td>重慶 4 天</td><td>含吃到飽+火鍋+小吃</td><td>770</td><td>3,388</td></tr>
+          <tr class="total-row"><td colspan="2"><strong>餐飲合計</strong></td><td><strong>2,040</strong></td><td><strong>8,976</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="budget-category" style="margin-top:20px;">
+    <h3>&#x1F684; 交通費用</h3>
+    <div class="overflow-table">
+      <table class="data-table">
+        <thead><tr><th>交通段</th><th>兩人 CNY</th><th>兩人台幣</th></tr></thead>
+        <tbody>
+          <tr><td>成都東 → 黃龍九寨 高鐵</td><td>260</td><td>1,144</td></tr>
+          <tr><td>九寨溝接駁車（來回）</td><td>200</td><td>880</td></tr>
+          <tr><td>黃龍九寨 → 重慶 高鐵</td><td>320</td><td>1,408</td></tr>
+          <tr><td>重慶北 → 成都東 高鐵</td><td>160</td><td>704</td></tr>
+          <tr><td>機場地鐵 + 市內地鐵（全程）</td><td>200</td><td>880</td></tr>
+          <tr class="total-row"><td><strong>交通合計</strong></td><td><strong>1,140</strong></td><td><strong>5,016</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="budget-total-box" style="margin-top:24px;">
+    <div class="total-label">兩人總計（不含機票）</div>
+    <div class="total-cny">約 CNY 7,120</div>
+    <div class="total-twd">約台幣 31,328 ｜ 每人約台幣 15,664</div>
+  </div>
+
+  <div class="alert-box warning" style="margin-top:20px;">
+    <span class="alert-icon">&#x26A0;&#xFE0F;</span>
+    <div>每人預算約台幣 15,664 元，超出目標 664 元（4.4%）。節省方式：Day 9 午餐改為普通餐廳（省約台幣 350）+ 減少零食支出即可壓回 15,000 以內。春熙路、太古里、磁器口購物費用<strong>未含</strong>在預算中，需自行另行預留。</div>
+  </div>
+</div>
+</section>
+
+<!-- 實用資訊 -->
+<section class="tab-content" id="tab-info">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F5FA;&#xFE0F;</span>
+    <div><h2>實用資訊</h2><p class="meta">緊急聯絡・常用中文・換匯建議・必備 App</p></div>
+  </div>
+
+  <div class="info-grid">
+    <div class="card">
+      <div class="card-header"><span>&#x1F198;</span><h3>緊急電話</h3></div>
+      <div class="card-body">
+        <ul class="activity-list">
+          <li><strong>警察（報案）</strong>：110</li>
+          <li><strong>消防 / 救護</strong>：120</li>
+          <li><strong>交通事故</strong>：122</li>
+          <li><strong>台灣駐成都辦事處</strong>：028-8666-2851</li>
+          <li><strong>旅外急難救助（外交部）</strong>：+886-800-085-095</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"><span>&#x1F4B1;</span><h3>換匯建議</h3></div>
+      <div class="card-body">
+        <ul class="activity-list">
+          <li>建議在台灣先換人民幣（台灣銀行利率較佳）</li>
+          <li>CNY 兌台幣匯率約 1:4.4（出發前確認最新匯率）</li>
+          <li>大陸幾乎全面使用<strong>支付寶</strong>或<strong>微信支付</strong></li>
+          <li>景點、飯店多可刷 Visa/Mastercard，小攤位僅接受行動支付</li>
+          <li>建議攜帶少量現金備用（CNY 500–1,000）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:16px;">
+    <div class="card-header"><span>&#x1F5E3;&#xFE0F;</span><h3>常用中文（台灣人在大陸旅遊常見情境）</h3></div>
+    <div class="card-body">
+      <div class="overflow-table">
+        <table class="phrase-table">
+          <thead><tr><th>場景</th><th>中文說法</th><th>備注</th></tr></thead>
+          <tbody>
+            <tr><td>叫計程車</td><td>打的（dǎ dī）/ 打滴滴</td><td>用滴滴出行 App 叫車</td></tr>
+            <tr><td>點餐</td><td>我要點餐 / 幫我點一下</td><td>許多餐廳用微信掃碼點餐</td></tr>
+            <tr><td>結帳</td><td>買單 / 結賬</td><td>台灣說「埋單」</td></tr>
+            <tr><td>廁所在哪</td><td>廁所在哪兒？/ 洗手間在哪</td><td>公廁=公共廁所</td></tr>
+            <tr><td>地鐵</td><td>地鐵 / 軌道交通</td><td>購票機有英文選項</td></tr>
+            <tr><td>太貴了</td><td>太貴了，可以便宜一點嗎？</td><td>景區周邊攤販可議價</td></tr>
+            <tr><td>拍照</td><td>可以幫我拍個照嗎？</td><td>大部分人很樂意幫忙</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>&#x1F4F1;</span><h3>必備 App 清單</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>支付寶</strong>：幾乎所有消費必備，出發前設定完畢</li>
+        <li><strong>微信（WeChat）</strong>：景點預約、取號、聯絡用</li>
+        <li><strong>Trip.com（攜程）</strong>：高鐵票、住宿、景點票預訂</li>
+        <li><strong>12306</strong>：中國官方鐵路購票 App（有英文介面）</li>
+        <li><strong>滴滴出行</strong>：叫計程車 / 快車，有英文版</li>
+        <li><strong>大眾點評</strong>：查餐廳評價、找吃到飽餐廳最新地址</li>
+        <li><strong>百度地圖 / 高德地圖</strong>：大陸境內導航（Google Maps 在大陸速度較慢）</li>
+        <li><strong>VPN</strong>：使用 Google / Instagram / LINE 等需要，建議出發前在台灣下載設定</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>&#x1F310;</span><h3>重要網址</h3></div>
+    <div class="card-body">
+      <ul class="activity-list">
+        <li><strong>九寨溝門票預約</strong>：<a href="https://www.jiuzhai.com/" target="_blank">https://www.jiuzhai.com/</a></li>
+        <li><strong>Klook（熊貓基地/景點票）</strong>：<a href="https://www.klook.com/zh-TW/" target="_blank">https://www.klook.com/zh-TW/</a></li>
+        <li><strong>12306 官網（高鐵票）</strong>：<a href="https://www.12306.cn/" target="_blank">https://www.12306.cn/</a></li>
+        <li><strong>台灣外交部旅遊資訊</strong>：<a href="https://www.boca.gov.tw/" target="_blank">https://www.boca.gov.tw/</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 交通攻略 -->
+<section class="tab-content" id="tab-transport">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x1F687;</span>
+    <div><h2>&#x1F687; 交通攻略</h2></div>
+  </div>
+
+  <div class="alert-box info">
+    <span class="alert-icon">&#x1F4CC;</span>
+    <div>高鐵訂票請使用 12306 APP，需以台胞證實名制購票。建議出發前 1–2 週訂好，成都↔重慶班次密集可不用太早。</div>
+  </div>
+
+  <div class="accordion-group">
+
+    <!-- 城際交通 -->
+    <div class="accordion-item open">
+      <button class="accordion-trigger">
+        <span><span class="acc-icon">&#x1F684;</span>城際交通（高鐵・接駁）</span>
+        <span class="acc-arrow">&#x25BC;</span>
+      </button>
+      <div class="accordion-body">
+        <div class="route-segment">
+          <div class="route-from">成都東站</div><span class="route-arrow">→</span><div class="route-to">重慶北站</div>
+          <span class="route-tag">高鐵 G字頭</span>
+          <div class="route-meta"><span class="route-cost">CNY 154／人</span><span class="route-time">約 1h05m–1h25m</span></div>
+        </div>
+        <div class="route-segment">
+          <div class="route-from">成都東站</div><span class="route-arrow">→</span><div class="route-to">黃龍九寨站</div>
+          <span class="route-tag">高鐵</span>
+          <div class="route-meta"><span class="route-cost">CNY 100–150／人</span><span class="route-time">約 1h40m</span></div>
+        </div>
+        <div class="route-segment">
+          <div class="route-from">黃龍九寨站</div><span class="route-arrow">→</span><div class="route-to">九寨溝景區</div>
+          <span class="route-tag">接駁巴士</span>
+          <div class="route-meta"><span class="route-cost">CNY 30–50／人</span><span class="route-time">約 40–60 分鐘</span></div>
+        </div>
+        <div class="route-segment">
+          <div class="route-from">重慶北站</div><span class="route-arrow">→</span><div class="route-to">成都東站</div>
+          <span class="route-tag">高鐵 G字頭</span>
+          <div class="route-meta"><span class="route-cost">CNY 154／人</span><span class="route-time">約 1h05m（回程）</span></div>
+        </div>
+        <div class="route-segment">
+          <div class="route-from">成都東站</div><span class="route-arrow">→</span><div class="route-to">天府國際機場</div>
+          <span class="route-tag">地鐵18號線</span>
+          <div class="route-meta"><span class="route-cost">CNY 18／人</span><span class="route-time">約 35–40 分鐘</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 成都市內 -->
+    <div class="accordion-item">
+      <button class="accordion-trigger">
+        <span><span class="acc-icon">&#x1F687;</span>成都市內交通</span>
+        <span class="acc-arrow">&#x25BC;</span>
+      </button>
+      <div class="accordion-body">
+        <div class="overflow-table">
+          <table class="data-table">
+            <thead><tr><th>路線</th><th>重要站點</th><th>前往景點</th></tr></thead>
+            <tbody>
+              <tr><td>1號線</td><td>天府廣場、錦里</td><td>武侯祠、市中心</td></tr>
+              <tr><td>2號線</td><td>成都東站、春熙路</td><td>高鐵站↔市中心</td></tr>
+              <tr><td>3號線</td><td>熊貓大道</td><td>大熊貓繁育研究基地</td></tr>
+              <tr><td>4號線</td><td>寬窄巷子站</td><td>寬窄巷子</td></tr>
+              <tr><td>18號線</td><td>成都東→天府機場</td><td>機場快線（約35分鐘）</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="alert-box info" style="margin-top:12px">&#x1F6FA; <strong>滴滴打車</strong>：出發前下載 App，用台灣手機號碼註冊，綁定支付寶即可使用。短程約 CNY 15–30。</div>
+      </div>
+    </div>
+
+    <!-- 重慶市內 -->
+    <div class="accordion-item">
+      <button class="accordion-trigger">
+        <span><span class="acc-icon">&#x1F69F;</span>重慶市內交通</span>
+        <span class="acc-arrow">&#x25BC;</span>
+      </button>
+      <div class="accordion-body">
+        <div class="overflow-table">
+          <table class="data-table">
+            <thead><tr><th>路線</th><th>重要站點</th><th>前往景點</th></tr></thead>
+            <tbody>
+              <tr><td>1號線</td><td>朝天門、解放碑、磁器口站</td><td>磁器口古鎮</td></tr>
+              <tr><td>2號線</td><td>李子壩站</td><td>輕軌穿樓景點</td></tr>
+              <tr><td>3號線</td><td>重慶北站、觀音橋</td><td>火車站進出</td></tr>
+              <tr><td>6號線</td><td>朝天門、重慶北站</td><td>洪崖洞步行可達</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="route-segment" style="margin-top:12px">
+          <div class="route-from">臨江門站</div><span class="route-arrow">↔</span><div class="route-to">上新街站</div>
+          <span class="route-tag">長江索道</span>
+          <div class="route-meta"><span class="route-cost">CNY 15 來回／人</span><span class="route-time">傍晚 5–7 點最美</span></div>
+        </div>
+        <div class="alert-box warning" style="margin-top:12px">&#x26F0;&#xFE0F; 重慶為「山城」，坡道多、高低差大，請使用<strong>高德地圖</strong>導航，穿舒適平底鞋。</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 費用總覽 -->
+  <div class="card">
+    <div class="card-header"><span>&#x1F4B3;</span><h3>交通費用總覽（2人合計）</h3></div>
+    <div class="card-body">
+      <div class="overflow-table">
+        <table class="data-table">
+          <thead><tr><th>路段</th><th>方式</th><th>單人（CNY）</th><th>2人（CNY）</th></tr></thead>
+          <tbody>
+            <tr><td>成都東→重慶北（去）</td><td>高鐵二等座</td><td>154</td><td>308</td></tr>
+            <tr><td>成都東→黃龍九寨</td><td>高鐵二等座</td><td>約 120</td><td>約 240</td></tr>
+            <tr><td>黃龍九寨→景區接駁</td><td>巴士</td><td>約 40</td><td>約 80</td></tr>
+            <tr><td>重慶北→成都東（回）</td><td>高鐵二等座</td><td>154</td><td>308</td></tr>
+            <tr><td>成都東→天府機場</td><td>地鐵18號線</td><td>18</td><td>36</td></tr>
+            <tr><td>市內地鐵（成都+重慶）</td><td>地鐵</td><td>約 50</td><td>約 100</td></tr>
+            <tr><td>長江索道</td><td>索道</td><td>15</td><td>30</td></tr>
+            <tr><td>滴滴打車（各城市）</td><td>滴滴</td><td>約 60</td><td>約 120</td></tr>
+            <tr style="font-weight:700;background:#FFF3E0"><td colspan="2"><strong>合計</strong></td><td><strong>約 CNY 611</strong></td><td><strong>約 CNY 1,222</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 備選景點 -->
+<section class="tab-content" id="tab-alternatives">
+<div class="page-container">
+  <div class="page-title">
+    <span class="icon">&#x2728;</span>
+    <div><h2>&#x2728; 備選景點</h2></div>
+  </div>
+  <div class="alert-box info">
+    <span class="alert-icon">&#x1F4A1;</span>
+    <div>以下景點為行程彈性備選，如有空檔或想延伸行程可考慮加入。排名越前越推薦！</div>
+  </div>
+
+  <!-- 成都周邊 -->
+  <div class="section-divider"><span class="sd-icon">&#x1F43C;</span><h3>成都周邊備選景點</h3></div>
+  <div class="alt-card-grid">
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F3DB;&#xFE0F;</span>
+      <div class="ac-name">三星堆博物館</div>
+      <div class="ac-stars">★★★★★</div>
+      <div class="ac-desc">20世紀最偉大考古發現之一，神秘青銅面具令人震撼，2022年新館設施現代，強力推薦！</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F697; 成都出發約40分</span><span class="ac-tag ticket">&#x1F3AB; CNY 72</span><span class="ac-tag ticket">&#x26A0;&#xFE0F; 需提前預約</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F5FF;</span>
+      <div class="ac-name">樂山大佛</div>
+      <div class="ac-stars">★★★★★</div>
+      <div class="ac-desc">世界最高石刻坐佛，通高71公尺，可搭船從江面仰望。視覺衝擊極強，建議與峨眉山合併。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 高鐵約1.5h</span><span class="ac-tag ticket">&#x1F3AB; CNY 90</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F3EF;</span>
+      <div class="ac-name">都江堰</div>
+      <div class="ac-stars">★★★★☆</div>
+      <div class="ac-desc">西元前256年古代水利奇蹟，世界文化遺產，歷時兩千年仍在使用，可與青城山搭配一日遊。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 高鐵約30分</span><span class="ac-tag ticket">&#x1F3AB; CNY 60</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x26F0;&#xFE0F;</span>
+      <div class="ac-name">峨眉山</div>
+      <div class="ac-stars">★★★★☆</div>
+      <div class="ac-desc">中國四大佛教名山，金頂可見「佛光」奇景，9月天氣佳，建議安排1–2天深度遊覽。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 高鐵約1h15m</span><span class="ac-tag ticket">&#x1F3AB; CNY 185</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F33F;</span>
+      <div class="ac-name">青城山</div>
+      <div class="ac-stars">★★★☆☆</div>
+      <div class="ac-desc">道教發源地，「青城天下幽」，林木茂密、古廟眾多，半天輕鬆遊。常與都江堰搭配。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 搭車約1h</span><span class="ac-tag ticket">&#x1F3AB; 前山CNY60</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F3DB;&#xFE0F;</span>
+      <div class="ac-name">成都博物館</div>
+      <div class="ac-stars">★★★☆☆</div>
+      <div class="ac-desc">展示成都史前到現代文化，館藏豐富，建築本身極具特色，免費入場是最大亮點。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F687; 地鐵1號線</span><span class="ac-tag free">&#x1F193; 免費（需預約）</span></div>
+    </div>
+  </div>
+
+  <!-- 重慶周邊 -->
+  <div class="section-divider"><span class="sd-icon">&#x1F336;&#xFE0F;</span><h3>重慶周邊備選景點</h3></div>
+  <div class="alt-card-grid">
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F309;</span>
+      <div class="ac-name">武隆天生三橋</div>
+      <div class="ac-stars">★★★★☆</div>
+      <div class="ac-desc">世界自然遺產，三座天然石橋橫跨峽谷，《滿城盡帶黃金甲》取景地，景觀壯觀神奇。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 高鐵約1h</span><span class="ac-tag ticket">&#x1F3AB; CNY 120起</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F5FF;</span>
+      <div class="ac-name">大足石刻</div>
+      <div class="ac-stars">★★★★☆</div>
+      <div class="ac-desc">世界文化遺產，5萬餘尊佛教石刻精美細膩，跨越唐宋元明清，對宗教藝術有興趣者必去。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 高鐵約45m</span><span class="ac-tag ticket">&#x1F3AB; CNY 120起</span></div>
+    </div>
+    <div class="alt-card">
+      <span class="ac-icon">&#x1F3D4;&#xFE0F;</span>
+      <div class="ac-name">仙女山</div>
+      <div class="ac-stars">★★★☆☆</div>
+      <div class="ac-desc">重慶「南方草原」，海拔1,900m，9月草場翠綠開闊，可騎馬露營，可與武隆搭配同遊。</div>
+      <div class="ac-tags"><span class="ac-tag transport">&#x1F684; 武隆轉車約30m</span><span class="ac-tag ticket">&#x1F3AB; CNY 60–80</span></div>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>行程規劃：MAX ｜ 審查：VINCE ｜ 網頁設計：ROSE ｜ 2026-06-27</p>
+  <p style="margin-top:6px;">旅遊秘書 AI 團隊 — JAY 統籌 ｜ 資訊僅供參考，請出發前確認最新票價與開放狀況</p>
+</footer>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.tab-btn');
+  var contents = document.querySelectorAll('.tab-content');
+
+  function activateTab(tabId) {
+    tabs.forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.tab === tabId);
+    });
+    contents.forEach(function(content) {
+      content.classList.toggle('active', content.id === 'tab-' + tabId);
+    });
+    var activeBtn = document.querySelector('.tab-btn[data-tab="' + tabId + '"]');
+    if (activeBtn) {
+      activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  tabs.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      activateTab(btn.dataset.tab);
+    });
+  });
+})();
+
+// Accordion toggle
+document.querySelectorAll('.accordion-trigger').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    btn.closest('.accordion-item').classList.toggle('open');
+  });
+});
+</script>
+
+</body>
+</html>
